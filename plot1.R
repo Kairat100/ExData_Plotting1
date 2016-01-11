@@ -1,4 +1,4 @@
-#d = read.table("data_.txt", header = TRUE, sep = ";", na.string = "?")
+#d = read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.string = "?")
 #startDate = as.Date("2007-02-01")
 #endDate = as.Date("2007-02-02")
 #dd <- subset(d, as.Date(d$Date, "%d/%m/%Y") >= startDate & as.Date(d$Date, "%d/%m/%Y") <= endDate)
@@ -8,4 +8,3 @@ hist(as.numeric(d$Global_active_power), col = "red", main = "Global Active Power
 
 dev.copy(png, file = "plot1.png")
 dev.off()
-
